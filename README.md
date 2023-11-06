@@ -9,7 +9,7 @@ Your assignment is to establish a connection to the AdventureWorks sample databa
 ## Problem Statement:
 The problem at hand involves creating a chatbot or interface that connects to the AdventureWorks database and interprets natural language queries to fetch accurate and meaningful data. This task aims to simplify data retrieval and analysis for users by offering an intuitive, conversational interface.
  
-## Expectations for the Intern:
+## Expectations:
  
 As an intern working on this assignment, we expect you to:
 - Familiarize yourself with the provided resources: Review the reference links to understand the context.
