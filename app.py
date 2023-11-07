@@ -31,7 +31,7 @@ def main():
         # Connect SQL Server with python with paramters - Driver, Server Name, Database Name & Trusted Connection.        
         conn_str = "DRIVER={ODBC Driver 17 for SQL Server};Server=Kunal-HP-OMEN\SQL2022;Database=AdventureWorks2022;trusted_connection=yes;"
         SQL_ATTR_CONNECTION_TIMEOUT = 113
-        login_timeout = 1
+        login_timeout = 100
         connection_timeout = 3
         conn = pyodbc.connect(conn_str, timeout=login_timeout, attrs_before={SQL_ATTR_CONNECTION_TIMEOUT : connection_timeout})
         cursor = conn.cursor()
