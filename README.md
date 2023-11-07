@@ -1,6 +1,6 @@
 # SQL-Querying-using-Natural-Language
 
-## Task 3 (AdventureWorks querying to a database in natural language):
+## (AdventureWorks querying to a database in natural language):
 Your assignment is to establish a connection to the AdventureWorks sample database and enable natural language queries to extract data from the database. You will need to implement functionalities that allow users to pose questions in plain English and receive relevant information from the database. Here are a few example queries to consider:
 - Retrieve the date when the highest revenue and profit were generated.
 - Determine how many items with a ListPrice exceeding $1000 have been sold.
