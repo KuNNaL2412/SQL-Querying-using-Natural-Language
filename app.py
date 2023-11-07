@@ -28,8 +28,9 @@ def main():
     if api_key:
         os.environ["OPENAI_API_KEY"] = api_key
         st.header("SQL Database querying in Natural Language")
-        # Connect SQL Server with python with paramters - Driver, Server Name, Database Name & Trusted Connection.                                                  
-        conn = pyodbc.connect(driver='{ODBC Driver 17 for SQL Server}', server='Kunal-HP-OMEN\SQL2022,1433', database='AdventureWorks2022', UID='sa', PWD='admin123', trusted_connection='yes')
+        # Connect SQL Server with python with paramters - Driver, Server Name, Database Name & Trusted Connection.        
+        conn_str = "DRIVER={ODBC Driver 17 for SQL Server};Server=Kunal-HP-OMEN\SQL2022;Database=AdventureWorks2022;trusted_connection=yes;"
+        conn = pyodbc.connect(conn_str, timeout = 0)
         cursor = conn.cursor()
         
         # # Test the connection using a random query
